@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chloe Hui Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="topbar-wrap">
+      <header class="topbar">
+        <nav class="topbar__nav" aria-label="Primary">
+          <a href="#overview" data-nav="home">Overview</a>
+          <a href="#about" data-nav="home">About Me</a>
+          <a href="#categories" data-nav="home">Work Categories</a>
+          <a href="#selected-work" data-nav="home">Selected Work</a>
+        </nav>
+      </header>
+    </div>
+
+    <main>
+      <section class="overview-composite" id="overview">
+        <div class="site-shell">
+          <div class="overview-composite__frame">
+            <img class="overview-composite__image" src="assets/overview-combined.png" alt="Overview and About Me composition" />
+            <span class="overview-composite__about-anchor" id="about" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="categories">
+        <div class="site-shell">
+          <p class="eyebrow">Work Categories</p>
+          <h2 class="section-heading">Explore The Archive</h2>
+          <p class="section-subheading">
+            Each category page expands the original prototype with the complete project list and the embedded photos recovered from the portfolio documents.
+          </p>
+          <div class="category-grid" id="category-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="selected-work">
+        <div class="site-shell">
+          <div class="selected-work__image-wrap">
+            <img class="selected-work__image" src="selected work img.png" alt="Selected work composition" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--paper" id="selected-design">
+        <div class="site-shell">
+          <p class="eyebrow">Selected Design Project</p>
+          <h2 class="section-heading">Visual Snapshot</h2>
+          <div class="mosaic-grid" id="selected-design-grid"></div>
+          <div class="explore-row">
+            <a class="pill-link" href="#categories">Explore More</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-shell">
+        <div class="site-footer__card">
+          <p>This portfolio includes the homepage navigation anchors you requested and dedicated pages for each work category.</p>
+          <a class="pill-link" href="#overview">Back To Top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
